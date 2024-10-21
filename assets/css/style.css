@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+}
+
+html {
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+header {
+    height: 60px;
+    background-color: #672cbf;
+}
+
+h1 {
+    line-height: 60px;
+    font-size: 28px;
+    color: #fff;
+}
+
+nav {
+  padding: 0 280px 0 100px;
+  line-height: 60px;
+  font-size: 18px;
+  color: #fff;
+  gap: 20px;
+
+  p:hover {
+     transform: scale(1.2);
+     transition: ease-in-out 0.25s;
+  }
+}
+
+main {
+    height: calc(100vh - 60px);
+    background-color: #f1f2f4;
+    display: grid;
+    place-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+input[type=text] {
+    margin-top: 6px;
+    width:200px;
+    height: 45px;
+    padding:0 15px 0 40px;
+    font-size: 18px;
+    color:#fff;
+    background: #5a26a3 url(../img/search.png) 13px 13px no-repeat;
+    background-size: 20px;
+    border: 1px solid rgb(255 255 255 / 5%);
+    border-radius: 30px;
+}
+
+input[type=text]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+table {
+    font-size: 15px;
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+    letter-spacing: -0.5px;
+}
+
+thead {
+    color:#999b9e;
+}
+
+tbody {
+    background-color:#a3cbe6;
+    line-height:65px;
+}
+
+tbody:hover {
+    transform: scale(1.02);
+    transition: ease-in-out 0.25s;
+}
+
+button {
+    height:40px;
+    width: 120px;
+    background-color: #f1f2f4;
+    border: 1px solid #f1f2f4;
+    border-radius: 20px;
+    line-height: 40px;
+    color:#999b9e;
+    font-size: 15px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.25s;
+    background-color: #3f7294;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.first {
+    padding: 0 20px 0 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.right-align {
+    padding-right: 20px;
+    text-align: right;
+}
+
+.last {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
